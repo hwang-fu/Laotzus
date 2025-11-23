@@ -1,0 +1,82 @@
+(*-----------------------------------------*)
+program HelloWorld; // Program Entrance Name...
+(*-----------------------------------------*)
+type
+    i8ptr = @i8,
+    i8pptr = @i8ptr,
+    u8ptr = @u8,
+    letter = char,
+    Book1 = structure begin
+        bookId: i8,
+        bookName: @char,
+        bookAuthor: @ char,
+    end,
+    Book2 = structure begin
+        bookId: i8,
+        bookName: @char,
+        bookAuthor: @ char,
+        smallBook: Book1,
+    end;
+(*-----------------------------------------*)
+var
+    c1: char,
+    c2: char,
+    c3: char,
+    book: Book1;
+(*-----------------------------------------*)
+val
+    MAGIC1 = -20 * 11 + (1111),
+    MAGIC2: i8 = 30;
+(*-----------------------------------------*)
+var
+    i: i8,
+    j: i8,
+    k: i8,
+    iptr: @i8,
+    uptr: @u16,
+    count: u16;
+(*-----------------------------------------*)
+procedure hello(t1: char, t2: char, t3: i16, t4: i16, t5:u8);
+var
+    v1: @char,
+    v2: u16;
+val
+    X1: i8 = t1,
+    X2: u16 = 100,
+    X3: u8 = 1;
+begin
+    i := 1;
+    v1 := 2;
+
+    iptr := @i;
+
+    v2 := v1 + t1 + t2 + t3 * 100;
+end;
+(*-----------------------------------------*)
+function min(n1: i8, n2: i8): i8;
+var
+    temp: i8;
+begin
+    return n1;
+end;
+(*-----------------------------------------*)
+begin
+
+    count := 0;
+
+    i := 1 + 2 + 3;
+
+    j := 2 * 6 + (1 - 5 / 7 + 11) * 4;
+
+    count := count + 1;
+
+    hello(c1, c2, count, 1, 1);
+
+    uptr := @ count;
+
+    i :=  min(18, 19);
+
+    min(-1, -2);
+
+end.
+(*-----------------------------------------*)
