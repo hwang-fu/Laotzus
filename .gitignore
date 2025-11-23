@@ -1,0 +1,88 @@
+# ------------------------------------------------------------
+# Compiled binaries and libraries
+# ------------------------------------------------------------
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+*.obj
+*.lib
+
+# Free Pascal unit / object files
+*.ppu
+*.ppw
+*.ppl
+*.pyd
+
+# Debug symbol files
+*.dbg
+*.dSYM/
+*.map
+
+# ------------------------------------------------------------
+# Lazarus / Free Pascal build output
+# ------------------------------------------------------------
+
+# Lazarus build units / binaries (default "lib" + "backup" dirs)
+lib/
+backup/
+
+# Lazarus .lps (session) – user-specific
+*.lps
+
+# Lazarus compiled resources / generated files
+*.or
+*.rst
+*.rsj
+
+# Lazarus unit output (sometimes projects use their own output dirs)
+units/
+tmp/
+build/
+
+# ------------------------------------------------------------
+# Delphi / RAD Studio stuff
+# ------------------------------------------------------------
+
+# Delphi compiled units
+*.dcu
+*.dcp
+*.bpl
+*.bpi
+*.dcpil
+
+# Delphi project outputs and temp
+*.dsk          # desktop layout
+*.local
+*.identcache
+*.tvsconfig
+__history/
+__recovery/
+
+# ------------------------------------------------------------
+# IDE / editor cruft
+# ------------------------------------------------------------
+
+# VS Code
+.vscode/
+
+# JetBrains / Lazarus temp
+.idea/
+
+# Generic editor backups
+*~
+*.bak
+*.tmp
+
+# ------------------------------------------------------------
+# OS-level junk
+# ------------------------------------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
